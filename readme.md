@@ -1,14 +1,14 @@
 
-# MyInfo Connector NodeJS
+# Myinfo Connector NodeJS
 
 [![Known Vulnerabilities](https://snyk.io/test/github/singpass/myinfo-connector-nodejs/badge.svg)](https://snyk.io/test/github/singpass/myinfo-connector-v4-nodejs)
 
-MyInfo Connector NodeJS aims to simplify consumer's integration effort with MyInfo by providing an easy to use Javascript library to integrate into your application.
+Myinfo Connector NodeJS aims to simplify consumer's integration effort with MyInfo by providing an easy to use Javascript library to integrate into your application.
 
 
 ## Contents
 
-- [MyInfo Connector NodeJS](#myinfo-connector-nodejs)
+- [Myinfo Connector NodeJS](#myinfo-connector-nodejs)
   - [Contents](#contents)
   - [1. Installation](#1-installation)
     - [1.1. Using npm:](#11-using-npm)
@@ -16,7 +16,7 @@ MyInfo Connector NodeJS aims to simplify consumer's integration effort with MyIn
     - [2.1. Sample Code](#21-sample-code)
     - [2.2. Process Environment file](#22-process-environment-file)
   - [3. Individual Method](#3-individual-method)
-    - [3.1. Get MyInfo Person Data](#31-get-myinfo-person-data)
+    - [3.1. Get Myinfo Person Data](#31-get-myinfo-person-data)
     - [3.2. Generate Code Verifier and Code Challenge](#32-generate-code-verifier-and-code-challenge)
     - [3.3. Get Access Token](#33-get-access-token)
     - [3.4. Get Person Data](#34-get-person-data)
@@ -44,7 +44,7 @@ let connector = new MyInfoConnector(config.MYINFO_CONNECTOR_CONFIG); // MYINFO_C
 
 
   /**
-   * Get MyInfo Person Data (MyInfo Token + Person API)
+   * Get Myinfo Person Data (Myinfo Token + Person API)
    *
    * This method takes in all the required variables, invoke the following APIs.
    * - Get Access Token (Token API) - to get Access Token by using the Auth Code
