@@ -30,7 +30,7 @@ Myinfo Connector NodeJS aims to simplify consumer's integration effort with MyIn
 ### <a name="install"></a>1.1. Using npm:
 
 ``` 
-$ npm install myinfo-connector-nodejs 
+$ npm install myinfo-connector-v4-nodejs 
 ```
 
 ## <a name="usage"></a>2. Usage
