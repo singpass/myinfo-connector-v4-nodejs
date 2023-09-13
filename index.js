@@ -290,8 +290,15 @@ class MyInfoConnector {
   callPersonAPI = async function (sub, accessToken, sessionEphemeralKeyPair) {
     let urlLink;
 
-    urlLink = this.CONFIG.PERSON_URL + "/" + sub;
-
+    //Code to handle Myinfo Biz Entity Person URL
+    if (this.CONFIG.PERSON_URL.includes('biz')) {
+      let subTemp = sub.split('_');
+      var uen = subTemp[0];
+      var uuid = subTemp[1];
+      urlLink = this.CONFIG.PERSON_URL + '/' + uen + '/' + uuid;
+    } else {
+      urlLink = this.CONFIG.PERSON_URL + '/' + sub;
+    }
     let cacheCtl = "no-cache";
     let method = constant.HTTP_METHOD.GET;
 
@@ -333,9 +340,12 @@ class MyInfoConnector {
         : this.CONFIG.PERSON_URL;
     let parsedUrl = urlParser.parse(personURL);
     let domain = parsedUrl.hostname;
-    let requestPath = parsedUrl.path + "/" + sub + "?" + strParams;
-    //invoking https to do GET call
 
+    //update url to include uen for Myinfo Biz
+    let requestPath = this.CONFIG.PERSON_URL.includes('biz') ? `${parsedUrl.path}/${uen}/${uuid}?${strParams}` : 
+    `${parsedUrl.path}/${sub}?${strParams}`;
+    
+    //invoking https to do GET call
     let personData = await requestHandler.getHttpsResponse(
       method,
       "https://" + domain + requestPath,
