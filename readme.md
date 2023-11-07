@@ -77,7 +77,7 @@ You are required to create an environment file (in JSON format) with the followi
 | CLIENT_ID |  Client id provided during onboarding (e.g. _STG2-MYINFO-SELF-TEST_)|
 | REDIRECT_URL | The callback URL specified when invoking the authorize call. For our sample application, it is http://localhost:3001/callback |
 | SCOPE | Space separated list of attributes to be retrieved from Myinfo.  |
-| AUTHORIZE_JWKS_URL | The callback URL specified when invoking the authorize call. For our sample application, it is http://localhost:3001/callback |
+| Callback_URL | The callback URL specified when invoking the authorize call. For our sample application, it is http://localhost:3001/callback |
 | SCOPE | Comma separated list of attributes requested. Possible attributes are listed in the Person object definition in the API specifications. (e.g. _name,mobileno_) |
 | AUTHORIZE_JWKS_URL | The URL to retrieve the JWKS public key from Authorize. The URL is available in two environments:<ul><li> TEST: https://test.authorise.singpass.gov.sg/.well-known/keys.json</li><li>PRD: https://authorise.singpass.gov.sg/.well-known/keys.json</li>|
 | MYINFO_JWKS_URL | The URL to retrieve Myinfo JWKS public key. The URL is available in two environments:<ul><li> TEST: https://test.myinfo.singpass.gov.sg/.well-known/keys.json</li><li>PRD: https://myinfo.singpass.gov.sg/.well-known/keys.json</li>|
