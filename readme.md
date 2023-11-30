@@ -16,7 +16,7 @@ Myinfo Connector NodeJS aims to simplify consumer's integration effort with MyIn
     - [2.1. Sample Code](#21-sample-code)
     - [2.2. Process Environment file](#22-process-environment-file)
   - [3. Individual Method](#3-individual-method)
-    - [3.1. Get Myinfo Person Data](#31-get-myinfo-person-data)
+    - [3.1. Get MyInfo Person Data](#31-get-myinfo-person-data)
     - [3.2. Generate Code Verifier and Code Challenge](#32-generate-code-verifier-and-code-challenge)
     - [3.3. Get Access Token](#33-get-access-token)
     - [3.4. Get Person Data](#34-get-person-data)
@@ -76,9 +76,7 @@ You are required to create an environment file (in JSON format) with the followi
 | -------- | ----------- |
 | CLIENT_ID |  Client id provided during onboarding (e.g. _STG2-MYINFO-SELF-TEST_)|
 | REDIRECT_URL | The callback URL specified when invoking the authorize call. For our sample application, it is http://localhost:3001/callback |
-| SCOPE | Space separated list of attributes to be retrieved from Myinfo.  |
-| AUTHORIZE_JWKS_URL | The callback URL specified when invoking the authorize call. For our sample application, it is http://localhost:3001/callback |
-| SCOPE | Comma separated list of attributes requested. Possible attributes are listed in the Person object definition in the API specifications. (e.g. _name,mobileno_) |
+| SCOPE | Comma separated list of attributes requested. Possible attributes are listed in the Person object definition in the API specifications. (e.g. _name mobileno_) |
 | AUTHORIZE_JWKS_URL | The URL to retrieve the JWKS public key from Authorize. The URL is available in two environments:<ul><li> TEST: https://test.authorise.singpass.gov.sg/.well-known/keys.json</li><li>PRD: https://authorise.singpass.gov.sg/.well-known/keys.json</li>|
 | MYINFO_JWKS_URL | The URL to retrieve Myinfo JWKS public key. The URL is available in two environments:<ul><li> TEST: https://test.myinfo.singpass.gov.sg/.well-known/keys.json</li><li>PRD: https://myinfo.singpass.gov.sg/.well-known/keys.json</li>|
 | TOKEN_URL | Specify the TOKEN API URL for MyInfo. The API is available in two environments:<ul><li>TEST: https://test.api.myinfo.gov.sg/com/v4/token</li><li>PROD: https://api.myinfo.gov.sg/com/v4/token</li></ul> |
