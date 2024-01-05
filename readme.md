@@ -70,7 +70,7 @@ try{
 
     
 ### <a name="config"></a>2.2. Process Environment file
-You are required to create an environment file (in JSON format) with the following process environments for this library. You may look at the sample Process Environment file [HERE](https://github.com/singpass/verify-demo-app/blob/master/your-vms-server/config/config.js). 
+You are required to create an environment file (in JSON format) with the following process environments for this library. You may look at the sample Process Environment file [HERE](https://github.com/singpass/myinfo-demo-app-v4/blob/main/config/config.js). 
 
 | Required Properties | Description |
 | -------- | ----------- |
